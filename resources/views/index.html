@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>UniChina</title>
+    <meta name="author" content="Issayev Adilet">
+    <meta name="description" content="">
+
+    <!-- Bootstrap -->
+    <link href="/bower_components/bootstrap/dist/css/bootstrap-cerulean.min.css" rel="stylesheet">
+    <link href="/bower_components/bootstrap/dist/css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <h2 class="logo">
+              <span class="glyphicon glyphicon-education text-primary"></span> <a href="#">UniChina</a>
+            </h2>
+          </div>
+          <div class="col-md-9 text-right">
+            <nav class="nav-menu">
+              <a class="btn btn-primary">Главная</a>
+              <a class="btn btn-link">О нас</a>
+              <a class="btn btn-link">Университеты</a>
+              <a class="btn btn-link">Результаты</a>
+              <a class="btn btn-link">Контакты</a>
+
+              <div class="btn-group" role="group">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  RU <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-right">
+                  <li><a href="#">RU</a></li>
+                  <li><a href="#">KZ</a></li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="bg-header">
+      <div class="container">
+        <h1 class="text-upp">Гранты На Обучение<br> в Китае</h1>
+        <p>Мы Помогли Более <b>100 Студентам</b><br> Поступить в <b>Университеты Китая</b></p><br><br>
+        <a href="#" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-send"></span> Отправить заявку</a>
+      </div>
+    </div>
+
+    <!-- Modal send -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <form>
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title text-center">Отправите заявку, и наши специалисты свяжуься с Вами<br> в течение дня</h4>
+            </div>
+            <div class="modal-body">
+              <div class="form-group">
+                <label for="name">Имя</label>
+                <input type="name" class="form-control" id="name" placeholder="Введите имя" minlength="3" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Введите email" minlength="5" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">Номер телефона</label>
+                <input type="text" class="form-control" id="phone" placeholder="Введите номер телефона" minlength="5" required>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+              <button type="submit" class="btn btn-danger"><span class="glyphicon glyphicon-send"></span> Отправить Заявку</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="container universities">
+      <p class="h2">Получи Качественное и Доступное Образование<br> в Лучших Университетах Китая</p>
+      <p class="h4 text-muted">Высококлассные преподаватели, современные кампусы,<br> комфортные условия проживания, безопасность.</p>
+
+      <div id="carousel-uni" class="carousel slide" data-ride="carousel" data-interval="false">
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="row item active">
+            <div class="col-xs-4 col-md-4">
+              <div class="thumbnail">
+                <img src="/bower_components/bootstrap/dist/img/universities/1.jpg" alt="...">
+              </div>
+              <h4>Thumbnail label</h4>
+              <p class="text-muted"><span class="glyphicon glyphicon-map-marker"></span> China, Urumchi</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div class="col-xs-4 col-md-4">
+              <div class="thumbnail">
+                <img src="/bower_components/bootstrap/dist/img/universities/2.jpg" alt="...">
+              </div>
+              <h4>Thumbnail label</h4>
+              <p class="text-muted"><span class="glyphicon glyphicon-map-marker"></span> China, Pekin</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div class="col-xs-4 col-md-4">
+              <div class="thumbnail">
+                <img src="/bower_components/bootstrap/dist/img/universities/3.jpg" alt="...">
+              </div>
+              <h4>Thumbnail label</h4>
+              <p class="text-muted"><span class="glyphicon glyphicon-map-marker"></span> China, ShanHai</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+          </div>
+          <div class="row item">
+            <div class="col-xs-4 col-md-4">
+              <div class="thumbnail">
+                <img src="/bower_components/bootstrap/dist/img/universities/4.jpg" alt="...">
+              </div>
+              <h4>Thumbnail label</h4>
+              <p class="text-muted"><span class="glyphicon glyphicon-map-marker"></span> China, Urumchi</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div class="col-xs-4 col-md-4">
+              <div class="thumbnail">
+                <img src="/bower_components/bootstrap/dist/img/universities/5.jpg" alt="...">
+              </div>
+              <h4>Thumbnail label</h4>
+              <p class="text-muted"><span class="glyphicon glyphicon-map-marker"></span> China, Pekin</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div class="col-xs-4 col-md-4">
+              <div class="thumbnail">
+                <img src="/bower_components/bootstrap/dist/img/universities/6.jpg" alt="...">
+              </div>
+              <h4>Thumbnail label</h4>
+              <p class="text-muted"><span class="glyphicon glyphicon-map-marker"></span> China, ShanHai</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-uni-control hidden-xs" href="#carousel-uni" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-uni-control hidden-xs" href="#carousel-uni" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-uni" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-uni" data-slide-to="1"></li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- <div class="container about">
+      <h3 class="h1">О Нас</h3>
+      <p>Помогаем поступать в Вузы с 2012 года.</p>
+      <p>UniChina – это образовательное агентство по образованию в Китае, истоки которого были заложены много лет назад. За эти годы мы заключили много партнерских соглашений с известными и престижными университетами Китая, колледжами и языковыми школами. Наши клиенты всегда получают то, за чем пришли в наш офис. Мы понимаем, что обучение – это залог успеха в будущей жизни, поэтому подходим к подбору учебных заведений профессионально и ответственно. Мы работаем со студентами из Казахстана, Украины, Белоруссии, России, Узбекистана и других стран бывшего СНГ.</p>
+      <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseAbout" aria-expanded="false" aria-controls="collapseAbout">Больше информации <span class="caret"></span></button>
+      <div class="collapse" id="collapseAbout">
+        <p>Компания UniChina является официальным представителем Университетов, а также государственных и частных колледжей по всему миру.</p>
+        <p>Мы предлагаем разнообразные образовательные программы и осуществляем полное сопровождение наших клиентов на всех этапах поступления и обучения.</p>
+        <p>Наши цели совпадают с целями наших клиентов. Наши консультанты и менеджеры, используя свой опыт, помогают клиентам в разработке программ поступления с максимальной отдачей, которая обеспечивает успех в будущем.</p>
+      </div>
+      <hr>
+    </div> -->
+
+    <div class="programs">
+      <div class="container">
+        <h3 class="h1">Программы UniChina</h3>
+        <div class="row">
+          <div class="col-md-3 col-sm-6 section">
+            <img src="/bower_components/bootstrap/dist/img/programs/course.jpg" class="img-responsive">
+            <button class="btn btn-block btn-lg" type="button" data-toggle="collapse" data-target="#collapseCourse" aria-expanded="false" aria-controls="collapseCourse">Языковые Курсы <span class="caret"></span></button>
+            <div class="collapse" id="collapseCourse">
+              <div class="programs-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div class="">
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 section">
+            <img src="/bower_components/bootstrap/dist/img/programs/baccalaureate.jpg" class="img-responsive">
+            <button class="btn btn-block btn-lg" type="button" data-toggle="collapse" data-target="#collapseBaccalaureate" aria-expanded="false" aria-controls="collapseBaccalaureate">Бакалавриат <span class="caret"></span></button>
+            <div class="collapse" id="collapseBaccalaureate">
+              <div class="programs-info">Идеальные условия обучения и проживания. Насыщенная студенческая жизнь. Диплом международного образца.</div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 section">
+            <img src="/bower_components/bootstrap/dist/img/programs/magistracy.jpg" class="img-responsive">
+            <button class="btn btn-block btn-lg" type="button" data-toggle="collapse" data-target="#collapseMagistracy" aria-expanded="false" aria-controls="collapseMagistracy">Магистратура <span class="caret"></span></button>
+            <div class="collapse" id="collapseMagistracy">
+              <div class="programs-info">Безграничные возможности саморазвития. Преподаватели мирового класса. Ультрасовременные кампусы, оборудованные всем необходимым.</div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 section">
+            <img src="/bower_components/bootstrap/dist/img/programs/doctorate.png" class="img-responsive">
+            <button class="btn btn-block btn-lg" type="button" data-toggle="collapse" data-target="#collapseDoctorate" aria-expanded="false" aria-controls="collapseDoctorate">Докторантура <span class="caret"></span></button>
+            <div class="collapse" id="collapseDoctorate">
+              <div class="programs-info">Безграничный мир исследований в передовых лабораториях. Насыщенная академическая жизнь, участия во всемирных конференциях и выставках. Комфортные условия проживания.</div>
+            </div>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+
+    <div class="reviews">
+      <div class="container">
+
+        <h2>Отзывы Наших Студентов</h2><br>
+
+        <div class="row">
+          <div class="col-md-4 col-xs-12">
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <p class="review">"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+                <h4><span class="glyphicon glyphicon-user"></span> <a href="#">Arman Zholdasbekov</a></h4>
+                <p class="text-muted"><span class="glyphicon glyphicon-map-marker"></span> China, Pekin</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-xs-12">
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <p class="review">"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+                <h4><span class="glyphicon glyphicon-user"></span> <a href="#">Arman Zholdasbekov</a></h4>
+                <p class="text-muted"><span class="glyphicon glyphicon-map-marker"></span> China, Pekin</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-xs-12">
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <p class="review">"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+                <h4><span class="glyphicon glyphicon-user"></span> <a href="#">Arman Zholdasbekov</a></h4>
+                <p class="text-muted"><span class="glyphicon glyphicon-map-marker"></span> China, Pekin</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row hidden-xs">
+          <div class="col-md-4 col-xs-12">
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <p class="review">"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+                <h4><span class="glyphicon glyphicon-user"></span> <a href="#">Arman Zholdasbekov</a></h4>
+                <p class="text-muted"><span class="glyphicon glyphicon-map-marker"></span> China, Pekin</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-xs-12">
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <p class="review">"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+                <h4><span class="glyphicon glyphicon-user"></span> <a href="#">Arman Zholdasbekov</a></h4>
+                <p class="text-muted"><span class="glyphicon glyphicon-map-marker"></span> China, Pekin</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-xs-12">
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <p class="review">"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+                <h4><span class="glyphicon glyphicon-user"></span> <a href="#">Arman Zholdasbekov</a></h4>
+                <p class="text-muted"><span class="glyphicon glyphicon-map-marker"></span> China, Pekin</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="advantages">
+      <div class="container">
+        <h3 class="h1">Всего 3 Шага</h3><br>
+        <div class="row">
+          <div class="col-md-4">
+            <p class="steps"><span class="glyphicon glyphicon-file"></span></p>
+            <h4>Сбор Документов</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <div class="col-md-4">
+            <p class="steps"><span class="glyphicon glyphicon-cog"></span></p>
+            <h4>Подготовка</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <div class="col-md-4">
+            <p class="steps"><span class="glyphicon glyphicon-plane"></span></p>
+            <h4>Отправка в Китай</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+
+        <br><br>
+        <h3 class="h1">Начни Сейчас</h3><br>
+        <div class="row">
+          <div class="col-md-4 hidden-xs">
+            <br><br><br>
+            <p class="look-at-form"><span class="glyphicon glyphicon-share-alt"></span></p>
+          </div>
+          <div class="col-md-4 col-xs-10">
+            <form class="form-horizontal">
+              <div class="form-group">
+                <input type="password" class="input-lg form-control" id="name" placeholder="Введите имя">
+              </div>
+              <div class="form-group">
+                <input type="text" class="input-lg form-control" id="number" placeholder="Введите номер телефона">
+              </div>
+              <div class="form-group">
+                <input type="email" class="input-lg form-control" id="email" placeholder="Введите Email">
+              </div>
+              <div class="form-group">
+                <button type="submit" class="btn btn-lg btn-block btn-success"><span class="glyphicon glyphicon-ok"></span> Начать</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="certificates">
+      <div class="container">
+        <h3 class="h1">Сертификаты</h3><br>
+        <div class="row">
+          <div class="col-md-3 col-xs-6">
+            <img src="/bower_components/bootstrap/dist/img/certificate.jpg" class="img-responsive">
+          </div>
+          <div class="col-md-3 col-xs-6">
+            <img src="/bower_components/bootstrap/dist/img/certificate.jpg" class="img-responsive">
+          </div>
+          <div class="col-md-3 col-xs-6">
+            <img src="/bower_components/bootstrap/dist/img/certificate.jpg" class="img-responsive">
+          </div>
+          <div class="col-md-3 col-xs-6">
+            <img src="/bower_components/bootstrap/dist/img/certificate.jpg" class="img-responsive">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="course">
+      <div class="container">
+
+      </div>
+    </div> -->
+
+    <footer class="footer">
+      <div class="container">
+        <p class="h1">Наши контактные данные</p><br>
+        <div class="col-md-offset-1 col-md-10 text-center">
+          <div class="col-md-4">
+            <p class="h1"><span class="glyphicon glyphicon-map-marker"></span></p>
+            <h4>050000, г.Алматы, ул.<br>Гоголя Фурманова,<br> офис 500</h4>
+          </div>
+          <div class="col-md-4">
+            <p class="h1"><span class="glyphicon glyphicon-phone"></span></p>
+            <h4>+7 727 555 66 77<br> +7 747 333 44 55</h4>
+          </div>
+          <div class="col-md-4">
+            <p class="h1"><span class="glyphicon glyphicon-envelope"></span></p>
+            <h4>info@unichina.kz<br> company@unichina.kz</h4>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=AHPbDhkj1YuyOmViN4LNv5wplwDFKGrJ&width=100%&height=400&lang=ru_RU&sourceType=constructor"></script>
+
+    <footer class="footer">
+      <div class="container">
+        <h4>© 2016 UniChina.kz</h4>
+      </div>
+    </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
