@@ -8,13 +8,13 @@
         <p>{!! $landing->secondary !!}</p><br><br><br>
 
         <form action="" class="form-inline">
-          <div class="form-group has-error">
-            <input type="text" class="input-lg form-control" id="name" placeholder="Введите Имя">
+          <div class="form-group has-success">
+            <input type="text" class="input-lg form-control" id="name" placeholder="{{ trans('lang.form.name') }}">
           </div>
-          <div class="form-group has-error">
-            <input type="text" class="input-lg form-control" id="number" placeholder="Номер Телефона">
+          <div class="form-group has-success">
+            <input type="text" class="input-lg form-control" id="number" placeholder="{{ trans('lang.form.number') }}">
           </div>
-          <button type="submit" class="btn btn-danger btn-lg"><span class="glyphicon glyphicon-send"></span> Отправить Заявку</button>
+          <button type="submit" class="btn btn-success btn-lg"><span class="glyphicon glyphicon-send"></span> {{ trans('lang.form.btn') }}</button>
         </form>
       </div>
     </div>
@@ -70,7 +70,7 @@
     <div class="reviews">
       <div class="container">
 
-        <h2>Отзывы Наших Студентов</h2><br>
+        <h2>{{ trans('lang.reviews') }}</h2><br>
 
         <div class="row">
           <div class="col-md-4 col-xs-12">
@@ -138,7 +138,7 @@
         {!! $landing->three_steps !!}
 
         <br><br>
-        <h3 class="h1">Начни Сейчас</h3><br>
+        <h3 class="h1">{{ trans('lang.start_now') }}</h3><br>
         <div class="row">
           <div class="col-md-4 hidden-xs">
             <br><br><br>
@@ -147,16 +147,16 @@
           <div class="col-md-4 col-xs-10">
             <form class="form-horizontal">
               <div class="form-group">
-                <input type="password" class="input-lg form-control" id="name" placeholder="Введите имя">
+                <input type="password" class="input-lg form-control" id="name" placeholder="{{ trans('lang.form.name') }}">
               </div>
               <div class="form-group">
-                <input type="text" class="input-lg form-control" id="number" placeholder="Введите номер телефона">
+                <input type="text" class="input-lg form-control" id="number" placeholder="{{ trans('lang.form.number') }}">
               </div>
               <div class="form-group">
-                <input type="email" class="input-lg form-control" id="email" placeholder="Введите Email">
+                <input type="email" class="input-lg form-control" id="email" placeholder="{{ trans('lang.form.email') }}">
               </div>
               <div class="form-group">
-                <button type="submit" class="btn btn-lg btn-block btn-success"><span class="glyphicon glyphicon-send"></span> Начать</button>
+                <button type="submit" class="btn btn-lg btn-block btn-success"><span class="glyphicon glyphicon-send"></span> {{ trans('lang.start_btn') }}</button>
               </div>
             </form>
           </div>
@@ -166,7 +166,7 @@
 
     <div class="certificates">
       <div class="container">
-        <h3 class="h1">Сертификаты</h3><br>
+        <h3 class="h1">{{ trans('lang.certificates') }}</h3><br>
         <div class="row">
           <div class="col-md-3 col-xs-6">
             <img src="/bower_components/bootstrap/dist/img/certificate.jpg" class="img-responsive">

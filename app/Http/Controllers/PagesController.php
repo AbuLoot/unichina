@@ -25,4 +25,25 @@ class PagesController extends Controller
     		'universities' => $universities
     	]);
     }
+
+    public function page($slug)
+    {
+    	$page = Page::where('slug', $slug)->first();
+
+    	return view('pages.common', ['page' => $page]);
+    }
+
+    public function universities()
+    {
+    	$page = Page::where('slug', 'universitety')->first();
+
+    	return view('pages.universities', ['page' => $page]);
+    }
+
+    public function contacts()
+    {
+    	$page = Page::where('slug', 'kontakty')->first();
+
+    	return view('pages.contacts', ['page' => $page]);
+    }
 }

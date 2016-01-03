@@ -31,11 +31,9 @@ Route::get('lang/{locale}', function ($locale) {
 
 
 Route::get('/', 'PagesController@index');
-Route::get('index', 'PagesController@index');
-/*Route::get('about', 'PagesController@about');
-Route::get('universities', 'PagesController@universities');
-Route::get('/', 'PagesController@index');
-Route::get('/', 'PagesController@index');*/
+Route::get('kontakty', 'PagesController@contacts');
+Route::get('universitety', 'PagesController@universities');
+Route::get('{page}', 'PagesController@page');
 
 /*
 |--------------------------------------------------------------------------
